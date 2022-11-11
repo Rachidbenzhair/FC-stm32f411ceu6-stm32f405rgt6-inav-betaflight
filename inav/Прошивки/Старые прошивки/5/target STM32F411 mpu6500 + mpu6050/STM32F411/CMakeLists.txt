@@ -1,0 +1,7 @@
+target_stm32f411xe(STMF411 HSE_MHZ 25)
+target_stm32f411xe(STMF411_mpu6050 HSE_MHZ 25)
+target_stm32f411xe(STMF411_mpu6050_noSDcard HSE_MHZ 25)
+
+target_stm32f411xe(STMF411_24 HSE_MHZ 24) 
+target_stm32f411xe(STMF411_mpu6050_24 HSE_MHZ 24)
+target_stm32f411xe(STMF411_mpu6050_noSDcard_24 HSE_MHZ 24)
