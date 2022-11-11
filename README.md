@@ -1,6 +1,11 @@
-## inav betaflight stm32f411ceu6 (HSE_MHZ 25 (плата WeAct) )
+## inav betaflight stm32f411ceu6 (плата WeAct)
+
+inav 5.1 поддержка PPM и кварцев 25MHZ (PPM и HSE_MHZ 25)   
+betaflight только конфиги  
 
 Прошивки, target, прочее внутри [inav](./inav) и [betaflight](./betaflight)
+
+Исходник изменённого inav [тут](./inav/Прошивки/Исходники%20PPM%20HSE_25/inav-5.1.0-PPM-HSE_25)
 
 Оригинальная прошивка тут: https://github.com/iNavFlight/inav 
 
