@@ -163,4 +163,4 @@
 #define TARGET_IO_PORTC         0xffff
 #define TARGET_IO_PORTD         0xffff //(BIT(2))
 
-#define MAX_PWM_OUTPUT_PORTS       6
+#define MAX_PWM_OUTPUT_PORTS       9
