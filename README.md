@@ -9,7 +9,8 @@ betaflight только конфиги
 
 Оригинальная прошивка тут: https://github.com/iNavFlight/inav 
 
-## [Видео на YouTube](https://www.youtube.com/watch?v=FQCMZjob1gc)
+## [Видео на YouTube](https://www.youtube.com/watch?v=FQCMZjob1gc)  
+ [Видео с полётом](https://youtu.be/ueY3cfLiaxc)
 
 Заметки по схеме  
 * RX1/TX1: UART1  
