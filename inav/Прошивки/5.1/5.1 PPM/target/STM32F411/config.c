@@ -46,7 +46,7 @@
 
  void targetConfiguration(void)
  {
-    #if defined(STMF411_mpu6050) || defined(STMF411_mpu6050_24)
+    #if defined(STMF411_mpu6050)
       gyroConfigMutable()->looptime = 1500;
       systemConfigMutable()->i2c_speed = I2C_SPEED_800KHZ;
     #endif

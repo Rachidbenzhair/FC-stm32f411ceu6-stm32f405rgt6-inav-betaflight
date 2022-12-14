@@ -46,10 +46,11 @@
 
  void targetConfiguration(void)
  {
-    #if defined(STMF411_mpu6050) || defined(STMF411_mpu6050_24) || defined(STMF411_mpu6050_noSDcard) || defined(STMF411_mpu6050_noSDcard_24)
+    #if defined(STMF411_mpu6050)
       gyroConfigMutable()->looptime = 1500;
       systemConfigMutable()->i2c_speed = I2C_SPEED_800KHZ;
     #endif
+     rxConfigMutable()->rx_min_usec = 970;
      pinioBoxConfigMutable()->permanentId[0] = BOX_PERMANENT_ID_USER1;
      pinioBoxConfigMutable()->permanentId[1] = BOX_PERMANENT_ID_USER2;
      // pinioBoxConfigMutable()->permanentId[2] = BOX_PERMANENT_ID_NONE;

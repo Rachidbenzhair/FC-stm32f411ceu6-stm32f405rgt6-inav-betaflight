@@ -27,7 +27,6 @@
 #define BEEPER_INVERTED
 
 // *************** SPI2 SDcard *****************************
-
   #define USE_SPI
   #define USE_SPI_DEVICE_2
   #define SPI2_NSS_PIN          PB12
@@ -46,7 +45,7 @@
   // #define SDCARD_DETECT_INVERTED
 
 // *************** SPI1 Gyro & ACC **********************
-#if !(defined(STMF411_mpu6050)) && !(defined(STMF411_mpu6050_24))
+#if !(defined(STMF411_mpu6050))
 // #define USE_SPI
   #define USE_SPI_DEVICE_1
 
@@ -70,7 +69,7 @@
   #define MPU9250_SPI_BUS         BUS_SPI1
 
   // #define USE_EXTI
-  // #define GYRO_INT_EXTI            PB10
+  // #define GYRO_INT_EXTI            PA4
   // #define USE_MPU_DATA_READY_SIGNAL
 
 #endif
@@ -106,7 +105,7 @@
 
 #define DEFAULT_I2C_BUS         BUS_I2C1
 
-#if defined(STMF411_mpu6050) || defined(STMF411_mpu6050_24) || defined(STMF411_mpu6050_noSDcard) || defined(STMF411_mpu6050_noSDcard_24)
+#if defined(STMF411_mpu6050)
 #define USE_IMU_MPU6050
 #define IMU_MPU6050_ALIGN       CW270_DEG
 #define MPU6050_I2C_BUS        BUS_I2C1
@@ -130,6 +129,9 @@
 #define USE_MAG_IST8310
 #define USE_MAG_MAG3110
 #define USE_MAG_LIS3MDL
+#if !(defined(STMF411_mpu6050))
+#define USE_MAG_MPU9250
+#endif
 
 #define PITOT_I2C_BUS           BUS_I2C1
 
