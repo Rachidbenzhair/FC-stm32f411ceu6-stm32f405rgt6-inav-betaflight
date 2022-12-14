@@ -27,7 +27,7 @@
 #define BEEPER_INVERTED
 
 // *************** SPI2 SDcard *****************************
-#if !(defined(STMF411_mpu6050_noSDcard)) && !(defined(STMF411_mpu6050_noSDcard_24))
+
   #define USE_SPI
   #define USE_SPI_DEVICE_2
   #define SPI2_NSS_PIN          PB12
@@ -45,10 +45,8 @@
   // #define SDCARD_DETECT_PIN     NONE //PC15 //PA8
   // #define SDCARD_DETECT_INVERTED
 
-#endif
-
 // *************** SPI1 Gyro & ACC **********************
-#if !(defined(STMF411_mpu6050)) && !(defined(STMF411_mpu6050_24)) && !(defined(STMF411_mpu6050_noSDcard)) && !(defined(STMF411_mpu6050_noSDcard_24))
+#if !(defined(STMF411_mpu6050)) && !(defined(STMF411_mpu6050_24))
 // #define USE_SPI
   #define USE_SPI_DEVICE_1
 
@@ -66,9 +64,14 @@
   #define MPU6500_CS_PIN          PA4
   #define MPU6500_SPI_BUS         BUS_SPI1
 
-  #define USE_EXTI
-  #define GYRO_INT_EXTI            PB10
-  #define USE_MPU_DATA_READY_SIGNAL
+  #define USE_IMU_MPU9250
+  #define IMU_MPU9250_ALIGN       CW180_DEG
+  #define MPU9250_CS_PIN          PA4
+  #define MPU9250_SPI_BUS         BUS_SPI1
+
+  // #define USE_EXTI
+  // #define GYRO_INT_EXTI            PB10
+  // #define USE_MPU_DATA_READY_SIGNAL
 
 #endif
 
@@ -161,4 +164,4 @@
 #define TARGET_IO_PORTC         0xffff
 #define TARGET_IO_PORTD         0xffff //(BIT(2))
 
-#define MAX_PWM_OUTPUT_PORTS       9
+#define MAX_PWM_OUTPUT_PORTS       6

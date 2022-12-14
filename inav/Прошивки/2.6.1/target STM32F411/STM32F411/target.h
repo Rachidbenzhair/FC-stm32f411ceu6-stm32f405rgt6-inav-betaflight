@@ -45,9 +45,14 @@
 #define MPU6500_CS_PIN          PA4
 #define MPU6500_SPI_BUS         BUS_SPI1
 
-#define USE_EXTI
-#define GYRO_INT_EXTI            PB10
-#define USE_MPU_DATA_READY_SIGNAL
+#define USE_IMU_MPU9250
+#define IMU_MPU9250_ALIGN       CW180_DEG
+#define MPU9250_CS_PIN          PA4
+#define MPU9250_SPI_BUS         BUS_SPI1
+
+// #define USE_EXTI
+// #define GYRO_INT_EXTI            PB10
+// #define USE_MPU_DATA_READY_SIGNAL
 
 #endif
 
