@@ -1,4 +1,4 @@
-## inav betaflight stm32f411ceu6 (плата WeAct)
+## inav betaflight stm32f411ceu6(WeAct) stm32f405vgt6(PyBoard V1.1)
 
 inav 5.1 поддержка PPM и кварцев 25MHZ (PPM и HSE_MHZ 25)   
 betaflight только конфиги  
