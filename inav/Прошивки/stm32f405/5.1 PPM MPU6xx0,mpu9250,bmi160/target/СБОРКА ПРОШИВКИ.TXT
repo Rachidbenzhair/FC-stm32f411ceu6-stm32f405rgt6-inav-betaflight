@@ -1,0 +1,7 @@
+
+Исходник для сборки в папке "Исходники PPM HSE_25" или архиве inav-5.1.0-PPM-HSE_25.zip
+
+В CMakeLists.txt все названия прошивок 
+
+Сборка всех прошивок inav
+make STM32F405PY1v1 STM32F405PY1v1_allUART

@@ -1,1 +1,0 @@
-target_stm32f405xg(MAMBAF405_2022A)
