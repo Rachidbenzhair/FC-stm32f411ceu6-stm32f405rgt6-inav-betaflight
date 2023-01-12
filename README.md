@@ -5,7 +5,7 @@ betaflight только конфиги
 
 Прошивки, target, прочее внутри [inav](./inav) и [betaflight](./betaflight)
 
-Исходник изменённого inav [тут](./inav/Прошивки/Исходники%20PPM%20HSE_25/inav-5.1.0-PPM-HSE_25)
+Исходник изменённого inav [тут](./inav/Прошивки/Исходники%20inav-5.1.0-PPM-HSE_12_25/inav-5.1.0-PPM-HSE_12_25)
 
 Оригинальная прошивка тут: https://github.com/iNavFlight/inav 
 
