@@ -1,3 +1,4 @@
+Разводка платы stm32f405vgt6(PyBoard V1.1) [PDF](./PYBv11-schematics.pdf).
 
 Заметки по схеме  
 
