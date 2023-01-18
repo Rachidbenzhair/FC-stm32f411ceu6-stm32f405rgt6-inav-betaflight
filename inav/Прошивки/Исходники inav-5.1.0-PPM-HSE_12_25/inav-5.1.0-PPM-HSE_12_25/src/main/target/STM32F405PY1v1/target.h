@@ -62,7 +62,7 @@
 #define MPU9250_SPI_BUS         BUS_SPI1
 
 #define USE_IMU_BMI160
-#define IMU_BMI160_ALIGN       CW0_DEG_FLIP
+#define IMU_BMI160_ALIGN       CW0_DEG
 #define BMI160_CS_PIN          CS_PIN
 #define BMI160_SPI_BUS         BUS_SPI1
 
