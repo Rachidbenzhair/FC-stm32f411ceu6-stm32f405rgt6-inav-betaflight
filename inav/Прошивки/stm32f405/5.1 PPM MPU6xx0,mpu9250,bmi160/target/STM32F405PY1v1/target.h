@@ -29,14 +29,14 @@
 #define USE_SPI
 // *************** SPI2 OSD ***************************
 
-// #define USE_SPI_DEVICE_2
-// #define SPI2_SCK_PIN          PB13
-// #define SPI2_MISO_PIN   	    PC2
-// #define SPI2_MOSI_PIN   	    PC3
-//
-// #define USE_MAX7456
-// #define MAX7456_CS_PIN          PB12
-// #define MAX7456_SPI_BUS         BUS_SPI2
+#define USE_SPI_DEVICE_2
+#define SPI2_SCK_PIN          PB13
+#define SPI2_MISO_PIN   	    PC2
+#define SPI2_MOSI_PIN   	    PC3
+
+#define USE_MAX7456
+#define MAX7456_CS_PIN          PB12
+#define MAX7456_SPI_BUS         BUS_SPI2
 // *************** Gyro & ACC **********************
 #define USE_SPI_DEVICE_1
 
@@ -77,7 +77,7 @@
 #define VBUS_SENSING_PIN        PA9
 #define VBUS_SENSING_ENABLED
 
-// #define AVOID_UART2_FOR_PWM_PPM
+#define AVOID_UART3_FOR_PWM_PPM
 
 #define USE_UART1
 #define UART1_RX_PIN            PB7
@@ -157,13 +157,13 @@
 #define CURRENT_METER_ADC_CHANNEL       ADC_CHN_2
 // *************** LED2812 ************************
 #define USE_LED_STRIP
-#define WS2811_PIN                      PB13
+#define WS2811_PIN                      PB4
 
 // ***************  OTHERS *************************
 #define DEFAULT_FEATURES        (FEATURE_BLACKBOX) //FEATURE_VBAT
 
 #define USE_SPEKTRUM_BIND
-#define BIND_PIN                PB11 //  RX1
+#define BIND_PIN                PB11 //  RX3
 
 #define USE_DSHOT
 #define USE_ESC_SENSOR
@@ -173,10 +173,10 @@
 #define TARGET_IO_PORTA         0xffff
 #define TARGET_IO_PORTB         0xffff
 #define TARGET_IO_PORTC         0xffff
-#define TARGET_IO_PORTD         0xffff
+#define TARGET_IO_PORTD         (BIT(2))
 
 #if !(defined(STM32F405PY1v1_allUART))
-#define MAX_PWM_OUTPUT_PORTS       8
+#define MAX_PWM_OUTPUT_PORTS       10
 #else
-#define MAX_PWM_OUTPUT_PORTS       4
+#define MAX_PWM_OUTPUT_PORTS       6
 #endif
