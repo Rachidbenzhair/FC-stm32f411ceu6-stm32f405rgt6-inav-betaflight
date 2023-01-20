@@ -26,18 +26,18 @@
 #define BEEPER                  PA14 //PB2
 #define BEEPER_INVERTED
 
-// #define USE_SPI
+#define USE_SPI
 // *************** SPI2 OSD ***************************
 #define USE_SPI
 
-#define USE_SPI_DEVICE_2
-#define SPI2_SCK_PIN          PB13
-#define SPI2_MISO_PIN   	    PC2
-#define SPI2_MOSI_PIN   	    PC3
-
-#define USE_MAX7456
-#define MAX7456_CS_PIN          PB12
-#define MAX7456_SPI_BUS         BUS_SPI2
+// #define USE_SPI_DEVICE_2
+// #define SPI2_SCK_PIN          PB13
+// #define SPI2_MISO_PIN   	    PC2
+// #define SPI2_MOSI_PIN   	    PC3
+//
+// #define USE_MAX7456
+// #define MAX7456_CS_PIN          PB12
+// #define MAX7456_SPI_BUS         BUS_SPI2
 // *************** Gyro & ACC **********************
 #define USE_SPI_DEVICE_1
 
@@ -158,7 +158,7 @@
 #define CURRENT_METER_ADC_CHANNEL       ADC_CHN_2
 // *************** LED2812 ************************
 #define USE_LED_STRIP
-#define WS2811_PIN                      PA15
+#define WS2811_PIN                      PB13
 
 // ***************  OTHERS *************************
 #define DEFAULT_FEATURES        (FEATURE_BLACKBOX) //FEATURE_VBAT
