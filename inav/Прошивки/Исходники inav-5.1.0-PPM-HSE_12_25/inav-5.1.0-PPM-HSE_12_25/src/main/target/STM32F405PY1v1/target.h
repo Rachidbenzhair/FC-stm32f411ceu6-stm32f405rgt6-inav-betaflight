@@ -77,7 +77,7 @@
 #define VBUS_SENSING_PIN        PA9
 #define VBUS_SENSING_ENABLED
 
-#define AVOID_UART3_FOR_PWM_PPM
+// #define AVOID_UART3_FOR_PWM_PPM
 
 #define USE_UART1
 #define UART1_RX_PIN            PB7
@@ -93,6 +93,7 @@
 
 #if defined(STM32F405PY1v1_allUART)
 
+#define AVOID_UART2_FOR_PWM_PPM
 #define USE_UART2
 #define UART2_RX_PIN            PA3
 #define UART2_TX_PIN            PA2
@@ -156,8 +157,8 @@
 #define ADC_CHANNEL_2_PIN               PC4
 #define CURRENT_METER_ADC_CHANNEL       ADC_CHN_2
 // *************** LED2812 ************************
-#define USE_LED_STRIP
-#define WS2811_PIN                      PB4
+// #define USE_LED_STRIP
+// #define WS2811_PIN                      PA15
 
 // ***************  OTHERS *************************
 #define DEFAULT_FEATURES        (FEATURE_BLACKBOX) //FEATURE_VBAT
