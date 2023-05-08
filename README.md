@@ -1,4 +1,4 @@
-## inav betaflight stm32f411ceu6(WeAct) stm32f405vgt6(PyBoard V1.1)
+## inav betaflight stm32f411ceu6(WeAct) stm32f405rgt6(PyBoard V1.1)
 
 Прошивки, схемы, target, прочее внутри папок:  
 [inav](./inav)  
